@@ -1,0 +1,6 @@
+host = loop
+backenddir = /usr3/febetest
+backend = /usr3/xu/oldbed
+frontend = /usr3/fe/fex
+backglue = /usr3/xu/intx
+frontglue = /usr3/xu/ints

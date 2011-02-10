@@ -1,0 +1,35 @@
+## These files are included in the fe library
+## top-level routines are in
+INVENTORY
+
+alloc.c
+bert.c
+dump.c
+felibtop.c
+fetake.c
+findlinks.c
+freealloc.c
+grabspec.c
+inittask.c
+list.c
+minxface.c
+misc.c
+sendbot.c
+sendtop.c
+tumadd.c
+tumble.c
+tumjust.c
+tumtest.c
+usefull.c
+vm.c
+vmedit.c
+vmlist.c
+vmreap.c
+feconfig.h
+fekeys.h
+feminreq.h
+fest.h
+festbot.h
+fetypealias.h
+klugeddcls.h
+requests.h

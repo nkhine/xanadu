@@ -1,0 +1,83 @@
+Allocation routines for memory
+	alloc.c
+	alloc.h
+	allocdebug.c
+main modules
+	be.c  a stdio backend
+	bed.c a backenddaemon socket backend
+	xumain.c  interactive human "friendly" backend 
+	socketbe.c socket code for bed, the backenddaemon
+	players.h
+	port.h
+	entexit.c    tiny init files
+	init.c
+	task.c     per command task items
+	requests.h
+	rcfile.c   process .backendrc for xlog, backenddaemon and ??
+	bert.c     bert stuff implements  open and close and a hash to get at the bert 
+get & put highlevel  fe versions are for be & bed nonfe version for xumain
+	get1.c
+	get1fe.c
+	get2.c
+	get2fe.c
+	put.c
+	putfe.c
+	fns.c      put together get put & do
+do routines put together the semantics of the enfilades 
+	do1.c
+	do2.c
+	correspond.c  semantics of comparison  
+disk stuff: low level
+	disk.c
+	diskalloc.c
+	multiloaf.c   hairy disk interaction stuff
+disk high level: enfs in and out of disk
+	coredisk.h
+	corediskin.c
+	corediskout.c
+enfilade: stuff
+	credel.c  crum create&delete   memory collection (not gc, but data age stuff)
+		reap.h
+		tags.h   tags for typed object memory identification
+	crum.h
+	enf.h
+	genf.c  general enfilade routines  
+	edit.c
+	insert.c
+	orglinks.c
+	recombine.c
+	split.c
+	retrie.c
+  nd enfilade stuff:
+	insertnd.c
+	ndcuts.c
+	ndenf.h
+	ndinters.c
+	makeroom.c
+
+grandfilade:  the enfilade stuff is stored in.  A 1d enfillade on tumblers
+	granf1.c
+	granf2.c
+spanfilade:  2d enfilade mapping  invarient addresses <==> virtual(or varient addresses
+	spanf1.c
+	spanf2.c
+include files:
+	xanadu.h  defs of  interface types spans&specs& such
+	common.h  defs of tumblers and lots of random stuff  xanadu.h & everything else
+	defs.h   tiny included   in common.h
+misc datatype:
+	context.c  contexts are an interface data type ??? zzzz
+	sporgl.c  sporgls are spans or orgls, used internally to express results
+debugging and dump routines:
+	test.c
+tumbler stuff:
+	tumble.c
+	tumbleari.c
+wid & dsp routines on logical level up from tumbler stuff
+	wisp.c
+	wisp.h
+utility stuff:
+	queues.c
+	queues.h
+mostly superseded:  by standard lib stuff
+	usefull.c

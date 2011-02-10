@@ -1,0 +1,18 @@
+varioius backend to do stuff.
+
+make Istream retirevals, this for backup and archive purposes.  with just a bit of Istream retrieval we can
+	grab  any portion of the Istream, and any orgl(s) in a way that we can re-enter them, even in the
+	face of catastrophic software failure.
+
+redo the acount stuff, so that the fe is notified of the account name, but isn't in control.
+
+redo the bert stuff so that all docs and versions are created in the  users 
+account.  so that opening someone elses doc gives a version.  Later shift 
+to a capibilities system.
+
+  get  socket number
+
+expand select data so that  nplayers can be >25 
+
+
+note the recient changes to bedaemon have broken ints/intx glue for the frontend 

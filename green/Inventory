@@ -1,0 +1,155 @@
+Inventory		- This file
+Makefile		- A makefile to reconstruct the demo, the frontend,
+			  or the glue programs.
+README			- A quick introductory document
+backend			- Executable for single user backend program
+backenddaemon		- Executable for multiple user backend daemon
+demo_docs		- Directory of text files used to build demonstration enfilade
+demo_scripts		- Directory of scripts to build demonstration enfilades
+enf.enf			- The demonstation enfilade
+fe_source		- Directory of source code for frontend program
+fex			- Executable frontend
+glue_source		- Directory of source code for glue programs
+intf			- Executable to glue frontend to single user backend
+ints			- Executable to glue frontend to multiple user backend
+intx			- Executable to glue terminal to multiple user backend
+man			- Directory of man page documents for enclosed executables
+xanadu			- Shell script to run single user frontend/backend session
+xlog			- Executable to attach user to multiple user backend
+xumain			- Executable standalone backend used by scripts to setup demonstration
+	
+demo_docs:
+	Addresses
+	Bizplan1
+	Bizplan2
+	Bizplan3
+	Bizplan4
+	Bizplan5
+	Bizplan6
+	Bizplan7
+	Bizplan8
+	Company
+	Datamation
+	Feidoc
+	Formats.bnf
+	Glossary
+	Outln
+	Overview
+	Propaganda
+	ReplacingA
+	ReplacingB
+	ReplacingC
+	ReplacingD
+	Requestlist
+	Spanstuff
+	Suespaper
+	Tumblers
+	Xuinfo.bnf
+	brochure
+	contdoc
+	conti.d
+	contout
+	demo1
+	demo2
+	demo3
+	demo4
+	index
+	intro
+	xudesc
+	
+	
+demo_scripts:
+	demodocs	- Script for xumain to load document text into demonstration
+	demolinks	- Script for backend to setup links in demonstration
+	
+fe_source:
+	Makefile
+	alloc.c
+	bert.c
+	command.c
+	compare.c
+	cursor.c
+	cuts.c
+	defs.h
+	display.c
+	dump.c
+	edit.c
+	endsets.c
+	feconfig.h
+	fekeys.h
+	feminreq.h
+	fest.h
+	festbot.h
+	fesun.c
+	fetake.c
+	fetool.h
+	fetypealias.h
+	figures.c
+	find.c
+	findlinks.c
+	follow.c
+	freealloc.c
+	getspecset.c
+	getusrreq.c
+	init.c
+	inittask.c
+	initterm.c
+	insertdel.c
+	interact.c
+	klugeddcls.h
+	links.c
+	list.c
+	main.c
+	mask.c
+	menu.c
+	menuwindow.c
+	minxface.c
+	nextl.c
+	nowindowcur.c
+	parseesc.c
+	putf.c
+	requests.h
+	screen.c
+	scroll.c
+	select.c
+	sendbot.c
+	sendtop.c
+	stack.c
+	sun.c
+	sunscroll.c
+	terminal.c
+	termlow.c
+	tumadd.c
+	tumble.c
+	tumjust.c
+	tumtest.c
+	typeahead.c
+	usefull.c
+	uxf.c
+	version.c
+	vm.c
+	vmedit.c
+	vmlist.c
+	vmreap.c
+	weirdoptions.c
+	window.c
+	
+glue_source:
+	Makefile
+	intf.c
+	ints.c
+	intx.c
+	port.h		- Default socket(2) port and host name for ints and intx
+	rcfile.c	- Module to handle .backendrc in ints, intx and xlog
+	rcfile.h
+	xlog.c
+	
+man:
+	backend.1
+	daemon.1
+	fe.1
+	intf.1
+	ints.1
+	intx.1
+	xlog.1
+	xumain.1

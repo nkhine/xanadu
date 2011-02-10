@@ -1,0 +1,5 @@
+#! /bin/csh
+# stty raw
+intf backend xfe
+# stty -raw
+# reset

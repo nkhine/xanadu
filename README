@@ -1,0 +1,67 @@
+Welcome to Udanax Green!
+
+    QUICK START: just type "make demo".  Read on for details...
+
+
+The software consists of two main parts: the back-end and the front-end.
+(Nowadays people commonly refer to these as the server and client.)
+
+The back-end is written in C.  The source code is in the green/ directory.
+To build the executable, go into the green/ directory and run "make".  It
+should compile painlessly on any Linux system.  For some other systems,
+you may need to edit be_source/Makefile to choose the appropriate options
+to the C compiler.
+
+The front-end is written in Python.  It is located in the pyxi/ directory.
+It should run on any system that has Python 1.4 or better with Tcl/Tk
+support.  When you start Pyxi, it will also run the back-end in the be/
+subdirectory.  The set of documents you view and edit is stored in a single
+file called an enfilade file, located at be/enf.enf.  If you want to save a
+snapshot of the enfilade or replace it with another, just copy or replace
+this file.  If be/enf.enf is not present, Pyxi will start up by copying in
+the sample dataset, which contains some instructions and the Declaration of
+Independence.
+
+The back-end has a few known bugs, which have surfaced during testing with
+the Pyxi front-end.  However, it should be stable enough for you to try it
+out and get a feel for what the powerful data structures and algorithms in
+the server can do.  All of the back-end code was part of the Xanadu hypertext
+project, and is now released to the public as open source.
+
+----------------------------------------------------------------------
+
+This distribution was released on 2 September 1999.
+
+Please visit http://www.udanax.com/ for updates and more information about
+the people and the technology behind the Udanax project.
+
+The Udanax software is distributed under the following license.
+
+----------------------------------------------------------------------
+
+Copyright 1979-1999 Udanax.com.  All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions: 
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL Ka-Ping Yee OR Udanax.com BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+Except as contained in this notice, "Udanax", "Udanax.com", and the
+transcluded-U logo shall not be used in advertising or otherwise to
+promote the sale, use or other dealings in this Software without
+prior written authorization from Udanax.com.
+

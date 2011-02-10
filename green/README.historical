@@ -1,0 +1,43 @@
+This is the 88-1 release of Xanadu. It is in the state that things
+were pretty much before the money started to flow into XOC 
+(or shortly after it came). This release was never shipped.
+Roger Gregory says that its limitations include some problems with
+scalability. I'm going over it to see what use Filoli might make of it.
+(Note the technology here should be treated as highly proprietary
+since we have not yet sought patent protection).
+
+The executable binaries in this hierarchy are for a Sun-4 running 
+SunOS 4.X.
+
+To run the single user demo, type 'xanadu'
+
+You'll probably have some trouble the demo was meant to run
+using an ansi terminal-the closest thing is a vt100
+(the term program on NextStep is vt100). You'll see some strange
+characters and screen problems, but it should be workable.
+
+There is according to legend a SunView front-end done by John Walker
+and a Macintosh front-end that Johann Stromberg was working on-but 
+these aren't included here. 
+
+
+RJB 21 June 95
+I haven't installed the man pages for this program.
+They are among some of the more useful documentation I've seen of this.
+
+
+These are the man pages
+backenddaemon.L intf.L          intx.L          xumain.L
+backend.L       fex.L           ints.L          xlog.L
+
+
+For example to read the man page for the backend program:
+cd man
+nroff backend.L
+
+This stuff isn't relevant right now RJB:
+To run the multiple user demo, type 'xlog', give any string for the password,
+and type any character other than 'b' when asked if you have your own frontend.
+
+To reconstruct the demonstation enfilade, type 'make demo'
+	- This will take 10 to 20 minutes

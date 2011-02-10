@@ -1,0 +1,87 @@
+Welcome to Pyxi, the Python Udanax Interface.
+
+This is a front-end user interface for the Udanax Green server
+program, which manages hypertext documents that may be linked
+together in arbitrary ways, that can share text, and that can
+be branched off into new revisions.  The interface is both a
+browser and an editor (simply turn on editing mode in the Edit
+menu to begin editing the text directly).
+
+You need a few prerequisites before you can play with Pyxi:
+
+    - You must have Python 1.4 or better, with Tcl/Tk support.
+      Most Linux distributions include Python 1.5 nowadays.
+      If you have installed a recent distribution your system
+      should have everything you need.
+
+    - You must have a working back-end.  To compile the
+      back-end server, go into the green/ directory, which is
+      a sibling of this one, and run "make".
+
+    - Pyxi expects the back-end program to be called "backend",
+      and will run it in a subdirectory called "be".  The "be"
+      directory must exist and "be/backend" can be a copy of
+      the server executable or a symbolic link.  If the Udanax
+      distribution unpacked correctly, this link should already
+      be there.
+
+That's it!  To start Pyxi, simply do (in this directory):
+
+    ./pyxi
+
+The first document which appears will contain more instructions
+about how to use Pyxi and what interesting things it can do using
+the power of the Udanax hypertext document model.
+
+----------------------------------------------------------------------
+
+This version of Pyxi was released on 2 September 1999.
+
+Please visit
+
+    http://www.udanax.com/
+
+to follow the ongoing development of the project, to read about
+how the data structures and algorithms work, and to download
+software updates and source code as they become available.
+
+Note that an understanding of the mechanisms in the back-end
+server wasn't necessary in order to write the user interface.
+Pyxi was written based entirely on a specification for the
+client-server protocol, which is available online at
+
+    http://www.udanax.com/green/febe/
+
+
+Pyxi was written by Ka-Ping Yee <ping@lfw.org> in August 1999 and
+is distributed under the following license.
+
+----------------------------------------------------------------------
+
+Copyright 1999 by Ka-Ping Yee.  All rights reserved.
+This file is part of the Udanax Green distribution.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions: 
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL Ka-Ping Yee OR Udanax.com BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+Except as contained in this notice, "Udanax", "Udanax.com", and the
+transcluded-U logo shall not be used in advertising or otherwise to
+promote the sale, use or other dealings in this Software without
+prior written authorization from Udanax.com.
+
